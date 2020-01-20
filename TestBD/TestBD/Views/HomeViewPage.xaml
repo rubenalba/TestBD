@@ -5,18 +5,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="TestBD.HomeViewPage">
-
     <StackLayout>
         <StackLayout VerticalOptions="CenterAndExpand">
-            <Label Text="Prueba de conexión con BD" 
-               HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand" /> 
-            <Entry x:Name ="txtEnviado"/>
-            <Button Text="Enviar"/>
-            <Label Text="Datos recibidos:"/>
-            <Entry x:Name="txtRecibido" IsEnabled="False"/>
+            <Picker x:Name="usersList" 
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand" />
+            <Button x:Name="getUsersBtn" 
+                    Text="Obtener usuarios"/>
         </StackLayout>
-        
     </StackLayout>
-
 </ContentPage>
